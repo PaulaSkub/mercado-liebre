@@ -43,3 +43,25 @@ p{
     font-size: 12px;  
 }
 
+.fa-gift{
+    color: var(--color-cel-color);
+}
+
+.fa-user-shield{
+    color: var(--color-cel-color);
+}
+
+
+.fa-credit-card{
+    color: var(--color-cel-color);
+}
+
+.fa-shuttle-van{
+    color: var(--color-verd-color);
+   
+}
+
+div{
+    text-align: center;
+}
+
