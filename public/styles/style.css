@@ -1,3 +1,13 @@
+:root{
+    --color-bg-color: #EAC926;
+    --color-az-color: #03264C;
+    --color-cel-color: #1259c3;
+    --color-grisosc-color: #666;
+    --color-griscla-color: #ebebeb;
+    --color-verd-color: #39b54a;
+}
+
+
 
 .titulares{
     font-size: 24px;
@@ -8,6 +18,8 @@
 
 .descuento{
     font-size: 16px;
+    color:#39b54a;
+    ;
 }
 
 .descripciones{
