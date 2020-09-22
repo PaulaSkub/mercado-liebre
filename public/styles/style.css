@@ -29,6 +29,7 @@ nav{
     
 }
 
+
 .descuento{
     font-size: 16px;
     color:var(--color-verd-color);
@@ -39,13 +40,17 @@ nav{
     font-size: 16px;
 }
 
-.form {
-    font-size: 16px;
-}
 
 p{
     font-size: 12px;  
 }
+
+
+input{
+    font-size: 24px;  
+}
+
+
 
 .fa-gift{
     color: var(--color-cel-color);

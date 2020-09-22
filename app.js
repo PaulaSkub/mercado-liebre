@@ -14,6 +14,12 @@ app.get ('/', function (req,res){
   res.sendFile(file);
 })
 
+
+app.get ('/login', function (req,res){
+  let file = path.resolve('login.html')
+  res.sendFile(file);
+})
+
 app.get ('*', function (req,res){
     if (req.url.endsWith ('.css')){
         let file = path.resolve('public/styles' + req.url);
