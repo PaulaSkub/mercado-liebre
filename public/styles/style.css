@@ -31,6 +31,13 @@ nav{
 
 }
 
+.producto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right:15px ;
+}
+
 .precio{
     font-size: 18px;
     
@@ -97,4 +104,17 @@ input{
 
 .none{
     display: none;
+}
+
+footer{
+    padding-left:5% ;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.art-foot{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
