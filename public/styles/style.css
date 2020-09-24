@@ -71,7 +71,12 @@ input{
    
 }
 
-div{
-    text-align: center;
+
+
+.w-50{
+    width: 50%;
 }
 
+.none{
+    display: none;
+}
