@@ -13,13 +13,20 @@
     <body>
 
         <header>
-            <img src="logo-mercado-liebre.svg">
-            <p> Lugar para la barra de busqueda </p>
-            <i class="fas fa-hand-holding-usd"></i>
-            <p>Comprá en cuotas y sin tarjeta de crédito </p>
+            <img class="w-50" src="logo-mercado-liebre.svg">
+             <div><input class="w-50" type="text" placeholder="Buscar productos marcas"></div>
+             <div>
+                <i class="fas fa-hand-holding-usd"></i>
+                <p>Comprá en cuotas y sin tarjeta de crédito </p>
+            </div>
         
-            <nav>
-                <ul>
+            <nav> 
+
+                <div class="hamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <ul class="links">
                     <li>
                         <a href="#">Ofertas</a>
                     </li>
@@ -33,7 +40,7 @@
                         <a href="#">Ayuda</a>
                     </li>
                 </ul>
-                <ul>    
+                <ul class="links">    
                     <li>
                         <a href="/register">Crea tu cuenta</a><i class="far fa-address-card"></i>
                     </li>
@@ -44,7 +51,7 @@
                         <a href="#">Mas compras</a><i class="fas fa-shopping-basket"></i>
                     </li>
                 </ul>
-            </nav>
+             </nav>
         </header>
         
         <main>
@@ -52,13 +59,13 @@
             <form action= "/" method="GET">
 
                 <p><label for="nombreusuario"></label></p>
-                <p><input type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario"></p>
+                <p><input class="login" type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario"></p>
                     
 
                 <p><label for="contraseña"></label></p>
-                <p><input type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña"></p>
+                <p><input class="login" type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña"></p>
               
-                <input type="submit" value="Enviar">
+                <input class="boton-enviar" type="submit" value="Enviar">
 	            
             </form>
 
