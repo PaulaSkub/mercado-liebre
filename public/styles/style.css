@@ -1,10 +1,6 @@
-:root{
-    --color-cel-color: #1259c3;
-    --color-grisosc-color: #666;
-    --color-griscla-color: #ebebeb;
-    
-}
 
+
+/* Relleno */
 
 .bg-white{ background-color: white;}
 .bg-griscla {background-color: #ebebeb;}
@@ -17,12 +13,18 @@
 .fs-16 {font-size: 16px;}
 
 .c-green {color:#39b54a}
+.c-grisosc{color: #666}
+.c-celeste{color: #1259c3;}
+
+/* Estructura */
+.d-flex{display: flex;}
+
+
 
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--color-griscla-color);
     box-sizing: border-box;
 }
 
@@ -63,13 +65,10 @@ body{
 
 .titulares{
     font-size: 24px;
-    background-color: var(--color-griscla-color);
     padding-top: 20px;
     padding-bottom: 20px;
     width: 90%;
     text-align: left;
-    color: var(--color-grisosc-color);
-
 }
 
 .producto{
@@ -81,32 +80,9 @@ body{
 
 
 
-
-
-
-
-
 p{
     font-size: 12px;  
 }
-
-
-
-.fa-gift{
-    color: var(--color-cel-color);
-}
-
-.fa-user-shield{
-    color: var(--color-cel-color);
-}
-
-
-.fa-credit-card{
-    color: var(--color-cel-color);
-}
-
-
-
 
 
 .w-50{
