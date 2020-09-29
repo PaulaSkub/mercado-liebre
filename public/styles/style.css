@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--color-griso) ;
+    box-sizing: border-box;
 }
 
 header{
@@ -23,6 +24,11 @@ header{
     text-align: center;
 }
 
+.hamburguesa:hover .links{
+    display: block;
+    }
+
+
 .fa-bars{
     width: 40px;
     height: 40px;
@@ -30,9 +36,10 @@ header{
     color: white;
     font-size: 20px;
     padding: 10px;
-    border: 5px;
+    border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: block;
 }
 
 .fa-bars:hover{
@@ -40,14 +47,11 @@ header{
     cursor: pointer;
 }
 
-.fa-bars:hover.links{
-    background-color: #0022AA;
-}
-
 
 
 .links{
     display: none;
+    background-color: white;
 }
 
 .titulares{
@@ -164,4 +168,10 @@ footer{
     margin-bottom: 20px;
     border-radius: 5px;
     border: 0px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
