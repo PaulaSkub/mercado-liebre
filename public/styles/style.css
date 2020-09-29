@@ -11,7 +11,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--color-griso) ;
+    background-color: var(--color-griscla-color);
     box-sizing: border-box;
 }
 
@@ -60,15 +60,15 @@ header{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 90%;
-    align: center;
+    text-align: left;
+    color: var(--color-grisosc-color);
 
 }
 
 .producto{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     padding-left: 15px;
-    padding-right:15px ;
+    padding-right:15px;
     background-color: white;
 }
 
@@ -94,7 +94,7 @@ p{
 }
 
 input{
-    font-size: 24px;  
+    font-size: 24px; 
 }
 
 .fa-gift{
@@ -130,6 +130,7 @@ footer{
     padding-right: 5%;
     padding-bottom: 20px;
     padding-top: 20px;
+    background-color: white;
 }
 
 .art-foot{
@@ -146,6 +147,8 @@ footer{
     margin-bottom: 20px;
     border-radius: 5px;
     border: 0px;
+    box-sizing: border-box;
+    
 }
 
 .boton-enviar{
@@ -157,6 +160,11 @@ footer{
     margin-bottom: 20px;
     border-radius: 5px;
     border: 0px;
+    box-sizing: border-box;
+}
+
+.boton-enviar:hover{
+   background-color: #CC1155;
 }
 
 .boton-reset{
@@ -168,6 +176,11 @@ footer{
     margin-bottom: 20px;
     border-radius: 5px;
     border: 0px;
+    box-sizing: border-box;
+}
+
+.boton-reset:hover{
+    background-color: #CC1155;
 }
 
 ul{
