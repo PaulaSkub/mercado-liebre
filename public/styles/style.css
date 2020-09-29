@@ -1,11 +1,22 @@
 :root{
-    --color-bg-color: #EAC926;
-    --color-az-color: #03264C;
     --color-cel-color: #1259c3;
     --color-grisosc-color: #666;
     --color-griscla-color: #ebebeb;
-    --color-verd-color: #39b54a;
+    
 }
+
+
+.bg-white{ background-color: white;}
+.bg-griscla {background-color: #ebebeb;}
+.bg-yellow {background-color: #EAC926;}
+.bg-blue {background-color: #1259c3;}
+
+.fs-24{font-size: 24px;}
+.fs-20 {font-size: 20px;}
+.fs-18{font-size: 18px;}
+.fs-16 {font-size: 16px;}
+
+.c-green {color:#39b54a}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -13,10 +24,6 @@ body{
     padding: 0;
     background-color: var(--color-griscla-color);
     box-sizing: border-box;
-}
-
-header{
-    background-color: var(--color-bg-color);
 }
 
 
@@ -72,30 +79,18 @@ header{
     background-color: white;
 }
 
-.precio{
-    font-size: 18px;
-    
-}
 
 
-.descuento{
-    font-size: 16px;
-    color:var(--color-verd-color);
-    ;
-}
 
-.descripciones{
-    font-size: 16px;
-}
+
+
 
 
 p{
     font-size: 12px;  
 }
 
-input{
-    font-size: 24px; 
-}
+
 
 .fa-gift{
     color: var(--color-cel-color);
@@ -110,10 +105,7 @@ input{
     color: var(--color-cel-color);
 }
 
-.fa-shuttle-van{
-    color: var(--color-verd-color);
-   
-}
+
 
 
 
