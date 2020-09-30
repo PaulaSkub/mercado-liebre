@@ -17,8 +17,7 @@
 .c-celeste{color: #1259c3;}
 
 .align-left {text-align: left;}
-.align-center{text-align: center;}
-
+.align-center {text-align: center;}
 
 
 
@@ -27,12 +26,14 @@
 .d-flex{display: flex;}
 .f-wrap {flex-wrap: wrap;}
 .justify-spaceb {justify-content: space-between;}
-.w-50{width: 50%;}
-.w-90{width: 90%}
 .f-grow-1{flex-grow: 1;}
 
+.w-50{width: 50%;}
+.w-90{width: 90%}
 
 .padding-20 {padding: 20px;}
+
+
 
 
 
@@ -61,6 +62,7 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
+    
 }
 
 .fa-bars:hover{
@@ -87,10 +89,6 @@ p{
     font-size: 12px;  
 }
 
-
-.none{
-    display: none;
-}
 
 footer{
     padding-left:5% ;
