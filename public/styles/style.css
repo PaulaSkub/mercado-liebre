@@ -16,8 +16,24 @@
 .c-grisosc{color: #666}
 .c-celeste{color: #1259c3;}
 
+.align-left {text-align: left;}
+.align-center{text-align: center;}
+
+
+
+
 /* Estructura */
+
 .d-flex{display: flex;}
+.f-wrap {flex-wrap: wrap;}
+.justify-spaceb {justify-content: space-between;}
+.w-50{width: 50%;}
+.w-90{width: 90%}
+.f-grow-1{flex-grow: 1;}
+
+
+.padding-20 {padding: 20px;}
+
 
 
 
@@ -28,10 +44,6 @@ body{
     box-sizing: border-box;
 }
 
-
-.hamburguesa{
-    text-align: center;
-}
 
 .hamburguesa:hover .links{
     display: block;
@@ -63,14 +75,6 @@ body{
     background-color: white;
 }
 
-.titulares{
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 90%;
-    text-align: left;
-}
-
 .producto{
     margin: 20px;
     padding-left: 15px;
@@ -79,15 +83,10 @@ body{
 }
 
 
-
 p{
     font-size: 12px;  
 }
 
-
-.w-50{
-    width: 50%;
-}
 
 .none{
     display: none;
@@ -155,4 +154,11 @@ ul{
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.fa-shuttle-van{
+    border-radius: 50%;
+    border: 1px solid #39B54A;
+    padding: 5px;
+    display:inline-block:
 }
