@@ -4,6 +4,7 @@
     <head>
         <title>Registro</title>
         <meta charset=”utf-8”>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -13,120 +14,113 @@
     <body class="bg-griscla">
 
         <header class="bg-yellow">
-            <a href="/"><img class="w-50" src="logo-mercado-liebre.svg"></a>
-             <div><input class="w-50 fs-24" type="text" placeholder="Buscar productos marcas y mas"></div>
-             <div>
-                <i class="fas fa-hand-holding-usd"></i>
-                
+            <div class="d-flex">
+                <div class="w-50"><a href="/"><img src="logo-mercado-liebre.svg"></a></div>
+                <div class="w-50">
+                    <input class="w-90 m-2" type="text" placeholder="Buscar productos marcas y mas">
+                     <div><i class="fas fa-search "></i></div>
+                </div>
             </div>
-            <p>Comprá en cuotas y sin tarjeta de crédito </p>
+
+             <div>
+                <i class="fas fa-hand-holding-usd fs-16">Comprá en cuotas y sin tarjeta de crédito</i>
+            </div>
              
         
             <nav> 
-                <div class="hamburguesa">
-                    <i class="fas fa-bars"></i>
+                <div class="hamburguesa align-center">
+                    <i class="fas fa-bars align-center"></i>
                 
-
                     <ul class="links">
-                        <li>
-                            <a href="#">Ofertas</a>
-                        </li>
-                        <li>
-                            <a href="#">Tiendas Oficiales</a>
-                        </li>
-                        <li>
-                            <a href="#">Vender</a>
-                        </li>
-                        <li>
-                            <a href="#">Ayuda</a>
-                        </li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
                     </ul>
                     <ul class="links">    
-                        <li>
-                            <a href="/register">Crea tu cuenta</a><i class="far fa-address-card"></i>
-                        </li>
-                        <li>
-                            <a href="/login">Ingresa</a><i class="fas fa-arrow-alt-circle-right"></i>
-                        </li>
-                        <li>
-                            <a href="#">Mas compras</a><i class="fas fa-shopping-basket"></i>
-                        </li>
+                        <li><a href="/register">Crea tu cuenta</a><i class="far fa-address-card"></i></li>
+                        <li><a href="/login">Ingresa</a><i class="fas fa-arrow-alt-circle-right"></i></li>
+                        <li><a href="#">Mas compras</a><i class="fas fa-shopping-basket"></i></li>
                     </ul>
                 </div>
              </nav>
     
         </header>
-    
         
         <main>
 
-            <form action= "/" method="GET">
+            <form action= "/" method="GET" class="formulario-registro">
 
                 <label for="nomreyapellido"></label>
-                <input class="login fs-24" type="text" id="nomreyapellido" placeholder="Nombre y Apellido" name="nomreyapellido">
+                <input class="login " type="text" id="nomreyapellido" placeholder="Nombre y Apellido" name="nomreyapellido">
 
                 <label for="nombreusuario"></label>
-                <input class="login fs-24" type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario">
+                <input class="login " type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario">
 
                 <label for="email"></label>
-                <input class="login fs-24" type="email" id="email" placeholder="Email" name="email">
+                <input class="login " type="email" id="email" placeholder="Email" name="email">
                 
-                <label for="nacimiento">Fecha de Nacimiento</label>
-                <input class="login fs-24" type="date" name="nacimiento" step="1" >
+                <label for="nacimiento" class="subtitulo-register">Fecha de Nacimiento</label>
+                <input class="login " type="date" name="nacimiento" step="1" >
 
                 <label for="domicilio"></label>
-                <input class="login fs-24" type="text" id="domicilio" placeholder="Domicilio" name="domicilio">
+                <input class="login " type="text" id="domicilio" placeholder="Domicilio" name="domicilio">
                 
-                <label for="">Perfil del usuario</label>
-                <input class="login fs-24" type="radio" name="perfil" value="comprador">Comprador
-                <input class="login fs-24" type="radio" name="perfil" value="vendedor">Vendedor
+                
+                <label for="" class="subtitulo-register">Perfil del usuario</label>
+                <div class="container-perfil">
+                    <div class="f-grow-40"><input type="radio" name="perfil" value="comprador" >Comprador</div>
+                    <div class="f-grow-40"><input type="radio" name="perfil" value="vendedor" >Vendedor</div>
+                </div>
 
-                <label for="">Intereses</label>
-                <input class="login fs-24" type="checkbox" name="intereses" value="electro">Electro
-                <input class="login fs-24" type="checkbox" name="intereses" value="moda">Moda
-                <input class="login fs-24" type="checkbox" name="intereses" value="hogar">Hogar
-                <input class="login fs-24" type="checkbox" name="intereses" value="jugueteria">Jugeteria
-                <input class="login fs-24" type="checkbox" name="intereses" value="vidasana">Vida sana
+                <label for="" class="subtitulo-register">Intereses</label>
+                <div class="contenedor-intereses">
+                    <div class="intereses"><input  type="checkbox" name="intereses" value="electro">Electro</div>
+                    <div class="intereses"><input  type="checkbox" name="intereses" value="moda">Moda</div>
+                    <div class="intereses"><input  type="checkbox" name="intereses" value="hogar">Hogar</div>
+                    <div class="intereses"><input  type="checkbox" name="intereses" value="jugueteria">Jugeteria</div>
+                    <div class="intereses"> <input  type="checkbox" name="intereses" value="vidasana">Vida sana</div>
+                </div>
 
-                <label for="">Elegi tu foto de usuario</label>
-                <input class="login fs-24" type="file" name="imagen1">
+                <label for="" class="subtitulo-register">Elegi tu foto de usuario</label>
+                <input class="login " type="file" name="imagen1">
 
                 <label for="contraseña"></label>
-                <input class="login fs-24" type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña">
+                <input class="login " type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña">
 	             
                 <label for="confirmarcontraseña"></label>
-                <input class="login fs-24" type="password" id="confirmarcontraseña" placeholder="Confirma tu contraseña" name="contraseña">
+                <input class="login " type="password" id="confirmarcontraseña" placeholder="Confirma tu contraseña" name="contraseña">
                 
-                <input class="boton-enviar fs-24" type="submit" value="Enviar">
-                <input class="boton-reset fs-24" type="reset" value="Borrar">
+                <input class="boton-enviar " type="submit" value="Enviar">
+                <input class="boton-reset" type="reset" value="Borrar">
 	            
             </form>
 
         </main>
         
         <footer>
-            <article>
-                <i class="fas fa-credit-card c-celest"></i>
-                <h2>Pagá con tarjeta o en efectivo</h2>
+            <div class="art-foot">
+                <i class="fas fa-credit-card c-celeste"></i>
+                <p class="titulo-seccion-footer">Pagá con tarjeta o en efectivo</h2>
                 <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
-            </article>
+            </div>  
             
-            <article>
-                <i class="fas fa-gift c-celest"></i>
-                <h2>Envío gratis desde los $ 2.500</h2>
+            <div class="art-foot">
+                <i class="fas fa-gift c-celeste"></i>
+                <p class="titulo-seccion-footer">Envío gratis desde los $ 2.500</h2>
                 <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
-            </article>  
-
-            <article>
-                <i class="fas fa-user-shield c-celest"></i>  
-                <h2>Seguridad, de principio a fin</h2>
+            </div>
+            
+            <div class="art-foot">
+                <i class="fas fa-user-shield c-celeste"></i>  
+                <p class="titulo-seccion-footer">Seguridad, de principio a fin</h2>
                 <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre prtegid@.</p>
-            </article>  
+            </div>  
 
             <div><p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p></div>
+
         </footer>
 
-        </section>
      
 
 

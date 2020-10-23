@@ -19,6 +19,8 @@
 .align-left {text-align: left;}
 .align-center {text-align: center;}
 
+.img{max-width: 100%; max-height: 100%;}
+
 
 
 /* Estructura */
@@ -27,6 +29,7 @@
 .f-wrap {flex-wrap: wrap;}
 .justify-spaceb {justify-content: space-between;}
 .f-grow-1{flex-grow: 1;}
+.f-grow-40{flex-grow: 0.40;}
 .f-dirc-column {flex-direction: column;}
 
 .w-50{width: 50%;}
@@ -55,15 +58,15 @@ body{
 
 
 .fa-bars{
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background-color: #0044AA;
     color: white;
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: block;
     
 }
@@ -71,6 +74,17 @@ body{
 .fa-bars:hover{
     background-color: #0022AA;
     cursor: pointer;
+}
+
+.fa-search{
+
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px gray solid;
+    background-color: white;
+    margin: 2%;
+    font-size: 16px;
+    
 }
 
 
@@ -83,13 +97,30 @@ body{
     padding-left: 15px;
     padding-right:15px;
     background-color: white;
+    margin: 20px 20px;
+    width: 300px;
+    
 }
 
+.product-price{
+    font-size: 18px;
+    display: inline-block;
+    margin: 11px;
+}
+
+.product-descount{
+    font-size: 16px;
+    display: inline-block;
+    color: green
+}
 
 p{
     font-size: 12px;  
 }
 
+.formulario-login, .formulario-registro{
+    margin: 20px;
+}
 
 footer{
     padding-left:5% ;
@@ -108,23 +139,44 @@ footer{
 
 .login{
     width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    padding: 13px;
+    margin: 5px 5px;
+    border-radius: 10px;
     border: 0px;
     box-sizing: border-box;
     
+}
+
+.subtitulo-register{
+    padding: 13px;
+    margin: 5px 5px;
+    font-weight: bolder;
+    display: flex;
+    
+}
+
+.container-perfil{
+    display: flex;
+    justify-content: center;
+}
+
+
+.intereses{
+    margin: 10px 20px;
+}
+.contenedor-intereses{
+    display: flex;
+    flex-direction: column;
 }
 
 .boton-enviar{
     color: white;
     background-color: #0044AA;
     width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
     border: 0px;
     box-sizing: border-box;
 }
@@ -137,10 +189,10 @@ footer{
     color: white;
     background-color: #AA0044;
     width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
     border: 0px;
     box-sizing: border-box;
 }
@@ -165,39 +217,104 @@ img{
     border: 1px solid #39B54A;
     padding: 5px;
     display:inline;
+    position: sticky;
+    left: 220px;
 }
 
+
+.titulo-seccion-footer{
+    font-size: 18px;
+    font-weight: bolder;
+
+}
 
 section.ultima-visita, 
 section.ofertas
 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
 
 .descripcion{
-    visibility: hidden;
+    display: none;
 }
-
-
-article:hover {
+  article:hover {
     box-shadow: 0px 0px 10px rgb(100,100,100);
 }
 
 article:hover .descripcion{
-    visibility: visible;
+    display: block;
 }
 
 
+footer{
+    text-align: center;
+}
+
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-encabezado{
+    width: 180px;
+}
+
 
 @media (min-width: 769px) {
-    section.ultima-visita,
-    section.ofertas {
-        flex-direction: row;
+    
+    .encabezado{
         justify-content: space-around;
     }
+    .logo-encabezado{
+        width: 150px;
+    }
+
+    .aviso-encabezad0,  .logo-encabezado{
+        flex-grow: 0.20;
+
+    }
+
+    .buscador-encabezado{
+        flex-grow: 0.50;
+    }
+    
+    .links{
+        display: block;
+    }
+    .fa-bars{
+        visibility: hidden;
+        margin: 0;
+        padding: 0;}
+
+    .container-links{
+     display: flex;
+    justify-content: space-between;
+    
+}
+    .vistas{
+        flex-grow: 0.25;
+        background-color: #EAC926;
+        align-items: center;
+        margin: 20px 0 ;
+
+    }
+    .acciones{
+        flex-grow: 0.25;
+        background-color: #EAC926;
+        margin: 20px 0 ;
+    }
+
+.vistas a, .acciones a{
+    margin: 1px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+    
+    
+      
   }
 
-  footer{
-      text-align: center;
-  }
+  
