@@ -27,7 +27,7 @@ const controller = {
 	},
 	
 	// Create -  Method to store
-	store: (req, res) => {
+	store: (req, res, next) => {
 
 		const filePath = './data/productsDataBase.json';
 		let baseProductos = fs.readFileSync(filePath, { encoding: 'utf-8' });
@@ -85,7 +85,7 @@ const controller = {
 		
 	},
 	// Update - Method to update
-	update: (req, res) => {
+	update: (req, res, next) => {
 		
 
 		const filePath = './data/productsDataBase.json';
@@ -135,7 +135,7 @@ const controller = {
 		products = JSON.stringify(filtrado);
 
 		fs.writeFileSync(filePath, products);
-		res.redirect('/products');
+		res.redirect('/');
 	}
 }
 
