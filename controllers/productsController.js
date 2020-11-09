@@ -40,6 +40,11 @@ const controller = {
             products = JSON.parse(baseProductos)
 		}
 		
+		if (req.files){
+		var filename = req.files.map(function (file) {
+			return file.filename.toString();
+		})};
+
 			
 		products.push ({
 			id : products[products.length-1].id + 1,
@@ -48,7 +53,7 @@ const controller = {
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
-			image: req.body.file
+			image: filename
 		});
 
        	
@@ -98,7 +103,8 @@ const controller = {
 				product.price = req.body.price,
 				product.discount = req.body.discount,
 				product.category = req.body.category,
-				product.description = req.body.description}
+				product.description = req.body.description;
+				product.image = filename}
 		})
 	
 

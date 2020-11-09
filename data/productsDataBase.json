@@ -150,5 +150,21 @@
         "discount": "30",
         "category": "visited",
         "description": "Viaje"
+    },
+    {
+        "id": 18,
+        "name": "Hola",
+        "price": "1000",
+        "discount": "10",
+        "category": "in-sale",
+        "description": "Hola"
+    },
+    {
+        "id": 19,
+        "name": "Viaje2",
+        "price": "5566",
+        "discount": "20",
+        "category": "visited",
+        "description": "dasd"
     }
 ]
