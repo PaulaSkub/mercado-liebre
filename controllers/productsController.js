@@ -90,7 +90,7 @@ const controller = {
 
 		const filePath = './data/productsDataBase.json';
 		let baseProductos = fs.readFileSync(filePath, { encoding: 'utf-8' });
-		products = JSON.parse(baseProductos)
+		let products = JSON.parse(baseProductos)
 		
 		var filename = req.files.map(function (file) {
 			return file.filename.toString();
@@ -107,7 +107,7 @@ const controller = {
 				product.image = filename}
 		})
 	
-
+console.log (products)
 	      	
 		productsJSON = JSON.stringify(products);
         
@@ -115,7 +115,7 @@ const controller = {
         fs.writeFileSync(filePath, productsJSON)
 
 
-		res.redirect("/products");
+		res.redirect("/");
 
 
 
@@ -123,14 +123,17 @@ const controller = {
 
 	// Delete - Delete one product from DB
 	destroy : (req, res) => {
-		
+
 		const filePath = './data/productsDataBase.json';
 		let baseProductos = fs.readFileSync(filePath, { encoding: 'utf-8' });
-		products = JSON.parse(baseProductos)
+		
+		 let products = JSON.parse(baseProductos)
 
 		let filtrado = products.filter(function (product) {
 			return product.id != req.params.id;
 		})
+
+		
 
 		products = JSON.stringify(filtrado);
 
