@@ -40,10 +40,10 @@ const controller = {
             products = JSON.parse(baseProductos)
 		}
 		
-		if (req.files){
 		var filename = req.files.map(function (file) {
 			return file.filename.toString();
-		})};
+		});
+		
 
 			
 		products.push ({
