@@ -1,9 +1,9 @@
-function createProductMiddleware (req,res,next){
-    if(req.query.user == 'admin'){
-        next();
-    }else{
-        res.redirect('/')
-    }
-}
+// function createProductMiddleware (req,res,next){
+//     if(req.query.user == 'admin'){
+//         next();
+//     }else{
+//         res.redirect('/')
+//     }
+// }
 
-module.exports = createProductMiddleware
+// module.exports = createProductMiddleware
