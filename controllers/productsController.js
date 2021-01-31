@@ -96,7 +96,7 @@ const controller = {
 			return file.filename.toString();
 		});
 
-
+		
 		products.forEach (function(product){
 			if(product.id == req.params.id){
 				product.name = req.body.name,
