@@ -51,14 +51,54 @@ body{
     box-sizing: border-box;
 }
 
-.hamburguesa{
-    display: none;
+
+/* Encabezado */
+
+.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+}
+.encabezado-logo {
+    width: 20%;
+    margin-top: 20px;
 }
 
+.contenedor-buscador {
+    width: 50%;
+}
+.buscador{
+    margin: 3%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.barra-buscadora{
+    text-decoration: none;
+    width: 600px;
+    border: 1px grey solid;
+}
+
+.encabezado-texto {
+        width: 25%;
+        text-align: center;
+        display: flex;
+        
+    }
+
+.encabezado-texto p {
+    font-size: 0.9em;
+    margin: 30px 5px
+}
+
+/* Links */
 
 .hamburguesa:hover .links{
     display: block;
-    }
+   
+
+}
 
 
 .fa-bars{
@@ -256,66 +296,22 @@ footer{
     text-align: center;
 }
 
-.encabezado {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    
-}
-
-.encabezado-logo {
-    width: 250px;
-}
-
-.contenedor-buscador {
-    width: 50%;
-}
-.buscador{
-    margin: 3%;
-    display: flex;
-    justify-content: flex-end;
-    
-}
-.barra-buscadora{
-    text-decoration: none;
-    width: 600px;
-    border-radius: 5%;
-    border: 1px grey solid;
-}
-
-.encabezado-texto {
-        width: 25%;
-        text-align: center;
-        
-    }
-
-.encabezado-texto p {
-    font-size: 1em;
-    
-}
 
 
 
 
 
-@media (max-width: 540px) {
+
+
+@media (min-width: 540px) {
     
     .encabezado-logo {
         width: 190px;
     }
-    .encabezado-texto {
+  
+
+    .hambuguesa{
         display: block;
-        width: 100%;
-    }
-
-    
-.hamburguesa{
-    display: block;
-}
-
-
-.hamburguesa:hover .links{
-    display: block;
     }
 
     .links{
