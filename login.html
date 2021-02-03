@@ -14,52 +14,58 @@
     <body class="bg-griscla">
 
         <header class="bg-yellow">
-            <div class="d-flex">
-                <div class="w-50"><a href="/"><img src="logo-mercado-liebre.svg"></a></div>
-                <div class="w-50">
-                    <input class="w-90 m-2" type="text" placeholder="Buscar productos marcas y mas">
-                     <div><i class="fas fa-search "></i></div>
+           
+            <div class="encabezado">
+                <div class="encabezado-logo"> <img class="encabezado-logo-imagen" src="logo-mercado-liebre.svg"></div>
+                <div class="contenedor-buscador">
+                    <div class="buscador">
+                        <input  class="barra-buscadora"type="text" placeholder="Buscar productos marcas y mas">
+                        <i class="fas fa-search "></i>
+                    </div>
                 </div>
+                <div class="encabezado-texto">
+                    <div ><i class="fas fa-hand-holding-usd"></i></div>
+                    <div>Comprá en cuotas y sin tarjeta de crédito</div>
+                </div>
+                
             </div>
-
-             <div>
-                <i class="fas fa-hand-holding-usd fs-16">Comprá en cuotas y sin tarjeta de crédito</i>
-            </div>
+           
              
         
             <nav> 
                 <div class="hamburguesa align-center">
                     <i class="fas fa-bars align-center"></i>
-                
-                    <ul class="links">
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Tiendas Oficiales</a></li>
-                        <li><a href="#">Vender</a></li>
-                        <li><a href="#">Ayuda</a></li>
-                    </ul>
-                    <ul class="links">    
-                        <li><a href="/register">Crea tu cuenta</a><i class="far fa-address-card"></i></li>
-                        <li><a href="/login">Ingresa</a><i class="fas fa-arrow-alt-circle-right"></i></li>
-                        <li><a href="#">Mas compras</a><i class="fas fa-shopping-basket"></i></li>
-                    </ul>
+                <div class="container-links"> 
+                    <div class="links vistas">
+                        <div><a href="#">Ofertas</a></div>
+                        <div><a href="#">Tiendas Oficiales</a></div>
+                        <div><a href="#">Vender</a></div>
+                        <div><a href="#">Ayuda</a></div>
+                    </div>
+                    <div class="links acciones">    
+                       <div> <a href="/register">Crea tu cuenta</a><i class="far fa-address-card"></i></div>
+                       <div><a href="/login">Ingresa</a><i class="fas fa-arrow-alt-circle-right"></i></div>
+                       <div><a href="#">Mas compras</a><i class="fas fa-shopping-basket"></i></div>
+                    </div>
+
+                </div>
                 </div>
              </nav>
     
         </header>
-
         
         
         <main>
 
             <form action= "/" method="GET" class="formulario-login">
-
-                <p><label for="nombreusuario"></label></p>
-                <p><input class="login" type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario"></p>
-                    
-
+            <div>
+                <label for="nombreusuario"></label>
+                <input class="login" type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario">
+                </div>
+                <div> 
                 <p><label for="contraseña"></label></p>
-                <p><input class="login" type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña"></p>
-              
+                <input class="login" type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña">
+            </div>
                 <input class="boton-enviar" type="submit" value="Enviar">
 	            
             </form>
@@ -67,24 +73,25 @@
         </main>
             
         <footer>
-            <div class="art-foot">
+            <article class="art-foot">
+           
                 <i class="fas fa-credit-card c-celeste"></i>
                 <p class="titulo-seccion-footer">Pagá con tarjeta o en efectivo</h2>
                 <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
-            </div>  
+           
+          </article> 
             
-            <div class="art-foot">
+          <article class="art-foot">
                 <i class="fas fa-gift c-celeste"></i>
                 <p class="titulo-seccion-footer">Envío gratis desde los $ 2.500</h2>
                 <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
-            </div>
+            </article> 
             
-            <div class="art-foot">
+            <article class="art-foot">
                 <i class="fas fa-user-shield c-celeste"></i>  
                 <p class="titulo-seccion-footer">Seguridad, de principio a fin</h2>
                 <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre prtegid@.</p>
-            </div>  
-
+            </article> 
             <div><p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p></div>
 
         </footer>
