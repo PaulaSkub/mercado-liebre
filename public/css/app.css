@@ -459,4 +459,68 @@ textarea.form-input {
     width: 95%;
     margin: auto;
   }
+
+  .register{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+.subtitulo-register{
+    padding: 10px;
+    margin: 5px 5px;
+    font-weight: bolder;
+    display: flex;
+    
+}
+
+.container-perfil{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.intereses{
+    margin: 10px 20px;
+}
+.contenedor-intereses{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-enviar{
+    color: white;
+    background-color: #0044AA;
+    width: 100%;
+    padding: 13px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.boton-enviar:hover{
+   background-color: #CC1155;
+}
+
+.boton-reset{
+    color: white;
+    background-color: #AA0044;
+    width: 100%;
+    padding: 13px;
+    margin: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.boton-reset:hover{
+    background-color: #CC1155;
+}
+
 }

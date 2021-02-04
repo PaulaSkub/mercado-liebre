@@ -1,0 +1,71 @@
+«<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Todos los productos'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<form action= "/" method="GET" class="formulario-registro">
+        <div>
+        <label for="nomreyapellido"></label>
+        <input class="register" type="text" id="nomreyapellido" placeholder="Nombre y Apellido" name="nomreyapellido">
+    </div>
+    <div>
+        <label for="nombreusuario"></label>
+        <input class="register " type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario">
+       
+    </div> <div>
+        <label for="email"></label>
+        <input class="register " type="email" id="email" placeholder="Email" name="email">
+    </div>
+        <div>
+        <label for="nacimiento" class="subtitulo-register">Fecha de Nacimiento</label>
+        <input class="register " type="date" name="nacimiento" step="1" >
+    </div>
+        <div>
+        <label for="domicilio"></label>
+        <input class="register " type="text" id="domicilio" placeholder="Domicilio" name="domicilio">
+    </div>
+        <div>
+        
+        <label for="" class="subtitulo-register">Perfil del usuario</label>
+        <div class="container-perfil">
+            <div class= "perfil"><input type="radio" name="perfil" value="comprador" >Comprador</div>
+            <div class= "perfil"><input type="radio" name="perfil" value="vendedor" >Vendedor</div>
+        </div>
+    </div>
+        <div>
+        <label for="" class="subtitulo-register">Intereses</label>
+        <div class="contenedor-intereses">
+            <div class="intereses"><input  type="checkbox" name="intereses" value="electro">Electro</div>
+            <div class="intereses"><input  type="checkbox" name="intereses" value="moda">Moda</div>
+            <div class="intereses"><input  type="checkbox" name="intereses" value="hogar">Hogar</div>
+            <div class="intereses"><input  type="checkbox" name="intereses" value="jugueteria">Jugeteria</div>
+            <div class="intereses"> <input  type="checkbox" name="intereses" value="vidasana">Vida sana</div>
+        </div>
+    </div>
+        <div>
+        <label for="" class="subtitulo-register">Elegi tu foto de usuario</label>
+        <input class="register " type="file" name="imagen1">
+    </div>
+        <div>
+        <label for="contraseña"></label>
+        <input class="register " type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña">
+    </div>
+        <div>
+        <label for="confirmarcontraseña"></label>
+        <input class="register " type="password" id="confirmarcontraseña" placeholder="Confirma tu contraseña" name="contraseña">
+    </div>
+        
+        <input class="boton-enviar " type="submit" value="Enviar">
+        <input class="boton-reset" type="reset" value="Borrar">
+   
+    </form>
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

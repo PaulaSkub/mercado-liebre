@@ -13,6 +13,9 @@ const controller = {
 	search: (req, res) => {
 		// Do the magic
 	},
+	register: (req, res) => {
+		res.render ('register')
+	},
 };
 
 module.exports = controller;
