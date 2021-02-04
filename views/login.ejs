@@ -1,0 +1,30 @@
+«<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Todos los productos'}) %>
+
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<form action= "/" method="GET" class="formulario-login">
+        <div>
+            <label for="nombreusuario"></label>
+            <input class="login" type="text" id="nombreusuario" placeholder="Nombre de Usuario" name="nombreusuario">
+            </div>
+            <div> 
+            <p><label for="contraseña"></label></p>
+            <input class="login" type="password" id="contraseña" placeholder="Elegi tu contraseña" name="contraseña">
+        </div>
+            <input class="boton-enviar" type="submit" value="Enviar">
+            
+        </form>
+    
+    
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

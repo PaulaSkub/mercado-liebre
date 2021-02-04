@@ -523,4 +523,19 @@ textarea.form-input {
     background-color: #CC1155;
 }
 
+.login{
+  width: 100%;
+  padding: 10px;
+  margin: 20px 20px;
+  border-radius: 5px;
+  border: 0px;
+  box-sizing: border-box;
+  
+}
+
+.formulario-login, .formulario-registro{
+  margin: 20px;
+  display: block;
+}
+
 }
