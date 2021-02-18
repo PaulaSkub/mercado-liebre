@@ -1,6 +1,6 @@
 *{
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: auto;
 }
 
 /* Relleno */
@@ -213,7 +213,7 @@ footer{
 .login{
     width: 100%;
     padding: 10px;
-    margin: 20px 20px;
+    margin: 20px 0px;
     border-radius: 5px;
     border: 0px;
     box-sizing: border-box;
@@ -223,7 +223,7 @@ footer{
 .register{
     width: 100%;
     padding: 10px;
-    margin: 20px 20px;
+    margin: 20px 0px;
     border-radius: 5px;
     border: 0px;
     box-sizing: border-box;
@@ -257,9 +257,9 @@ footer{
     background-color: #0044AA;
     width: 100%;
     padding: 13px;
-    margin: 20px;
     border-radius: 10px;
     border: 0px;
+    margin: 20px 0px;
     box-sizing: border-box;
 }
 
@@ -272,9 +272,8 @@ footer{
     background-color: #AA0044;
     width: 100%;
     padding: 13px;
-    margin: 20px;
-    margin: 20px;
     border-radius: 10px;
+    margin: 20px 0px;
     border: 0px;
     box-sizing: border-box;
 }
