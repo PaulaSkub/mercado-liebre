@@ -23,7 +23,6 @@
 # Logs and databases #
 ######################
 *.log
-*.sql
 *.sqlite
 
 # OS generated files #
@@ -43,4 +42,7 @@ Thumbs.db
 .htaccess
 *.config
 node_modules/
+src/jsonStyle/
+public/images/users/
 .vscode/
+.env

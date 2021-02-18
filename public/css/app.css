@@ -132,12 +132,24 @@ hr {
   font-size: 1.5em;
 }
 
+.logout{
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.logout:hover{
+  color: #1259c3;
+}
+
 .left-navbar a,
 .right-navbar a {
   display: block;
   padding: 5px 0;
   border-bottom: solid 1px var(--gray);
 }
+
 
 
 /*====== Banner ======*/
@@ -151,6 +163,10 @@ hr {
 
 
 /*====== Products ======*/
+
+
+
+
 .products-wrapper {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -227,6 +243,10 @@ hr {
   transition: 300ms;
 }
 
+.noproducts {
+  text-align: center
+}
+
 .product-box:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -240,7 +260,6 @@ hr {
   transform: rotate(360deg);
   box-shadow: 0 0 5px var(--green);
 }
-
 
 /*====== Footer ======*/
 .main-footer {
@@ -401,10 +420,21 @@ hr {
   padding: 0 15px;
 }
 
+.error{
+  color: rgb(209, 0, 0);
+  font-size: 1.4em;
+}
+
 textarea.form-input {
   min-height: 140px;
   resize: vertical;
   padding: 15px;
+}
+
+/* Cart */
+
+.info p{
+  font-size: 20px;
 }
 
 
