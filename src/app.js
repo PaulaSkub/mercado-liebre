@@ -44,11 +44,14 @@ const mainRouter = require('./routes/mainRouter'); // Rutas main
 const productsRouter = require('./routes/productsRouter'); // Rutas /products
 const usersRouter = require('./routes/usersRouter'); // Rutas /user
 const productsapiRouter = require('./routes/api/productsRouter') // Rutas /apis para productos
+const itemspiRouter = require('./routes/api/itemsRouter') // Rutas /apis para productos
+
 
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
 app.use('/users', usersRouter);
 app.use('/api/products', productsapiRouter)
+app.use('/api/items', itemsapiRouter)
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
