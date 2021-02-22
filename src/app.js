@@ -44,7 +44,7 @@ const mainRouter = require('./routes/mainRouter'); // Rutas main
 const productsRouter = require('./routes/productsRouter'); // Rutas /products
 const usersRouter = require('./routes/usersRouter'); // Rutas /user
 const productsapiRouter = require('./routes/api/productsRouter') // Rutas /apis para productos
-const itemspiRouter = require('./routes/api/itemsRouter') // Rutas /apis para productos
+const itemsapiRouter = require('./routes/api/itemsRouter') // Rutas /apis para carrito
 
 
 app.use('/', mainRouter);
