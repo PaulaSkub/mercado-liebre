@@ -7,8 +7,7 @@ const { Product, Item, User } = require('../../database/models');
 module.exports = {
 
 add(req, res, next) {
-  
-  
+   
       // Busco el producto que voy a agregar como Item.
       Product.findByPk(req.body.productId, {
         include: ["user"],
