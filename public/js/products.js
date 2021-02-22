@@ -8,7 +8,7 @@ fetch('http://localhost:3000/api/products/latest')
             let variableNueva = ""
 
             productdata.forEach( item =>{
-                let price = item.price - item.price * item.discount / 100
+                let price = Math.trunc(item.price - item.price * item.discount / 100)
                 
 
                 variableNueva += `<div class="col-12 col-sm-6 col-lg-3"> 
@@ -49,7 +49,7 @@ fetch('http://localhost:3000/api/products/latest')
             let variableNueva = ""
 
             productdata.forEach( item =>{
-                let price = item.price - item.price * item.discount / 100
+                let price = Math.trunc(item.price - item.price * item.discount / 100)
                 
 
                 variableNueva += `<div class="col-12 col-sm-6 col-lg-3">
