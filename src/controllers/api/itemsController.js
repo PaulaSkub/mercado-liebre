@@ -40,4 +40,18 @@ add(req, res, next) {
             data: {items}}
      res.send(respuesta)})
     .catch(e => console.log(e));
-  }}
+  },
+
+  deleteFromCart(req, res,next) {
+    Item.destroy({
+      where: {
+        id: req.body.itemId,
+      },
+      force: true,
+    })
+      .then(function(respuesta){
+         res.send(respuesta)})
+      .catch((e) => console.log(e));
+  }
+
+}
