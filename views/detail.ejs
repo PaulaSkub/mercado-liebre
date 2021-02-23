@@ -31,10 +31,12 @@
 						<h2 class="product-detail-title"><%= product.name %></h2>
 						
 							<p class="product-detail-price small">
+								<% if (product.discount > 0){ %> 
 								<span><%= toThousand(product.price) %></span>
 								/
 								<b><%= product.discount %>% OFF</b>
 							</p>
+							<% } %> 
 							<p class="product-detail-price">
 								$<%= toThousand(product.price - (product.price*product.discount/100))  %>
 							</p>
