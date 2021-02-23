@@ -92,10 +92,9 @@ const controller = {
 		let baseProductos = fs.readFileSync(filePath, { encoding: 'utf-8' });
 		let products = JSON.parse(baseProductos)
 		
-		var filename = req.files.map(function (file) {
-			return file.filename.toString();
-		});
-
+		// var filename = req.files.map(function (file) {
+		// 	return file.filename.toString();
+		// });
 
 		products.forEach (function(product){
 			if(product.id == req.params.id){
@@ -104,7 +103,7 @@ const controller = {
 				product.discount = req.body.discount,
 				product.category = req.body.category,
 				product.description = req.body.description;
-				product.image = filename}
+				product.image = req.filesname}
 		})
 	
 console.log (products)

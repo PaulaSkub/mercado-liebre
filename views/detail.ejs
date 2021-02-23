@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('partials/head', {title:"detalle"}) %>
+<% products.find (function (product){if(product.id == idSelect){ %> 
+<%- include('partials/head', {title: product.name }) %>
+<% }}) %> 
 <body>
 	<!-- Header -->
 	<%- include('partials/headerNavbar') %>
