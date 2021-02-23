@@ -463,7 +463,7 @@ textarea.form-input {
   .register{
     width: 100%;
     padding: 10px;
-    margin: 20px 20px;
+    margin: 20px 10px;
     border-radius: 5px;
     border: 0px;
     box-sizing: border-box;
@@ -497,7 +497,7 @@ textarea.form-input {
     background-color: #0044AA;
     width: 100%;
     padding: 13px;
-    margin: 20px;
+    margin: 20px 10px;
     border-radius: 10px;
     border: 0px;
     box-sizing: border-box;
@@ -512,8 +512,8 @@ textarea.form-input {
     background-color: #AA0044;
     width: 100%;
     padding: 13px;
-    margin: 20px;
-    margin: 20px;
+    
+    margin: 20px 10px;
     border-radius: 10px;
     border: 0px;
     box-sizing: border-box;
@@ -526,7 +526,7 @@ textarea.form-input {
 .login{
   width: 100%;
   padding: 10px;
-  margin: 20px 20px;
+  margin: 20px 10px;
   border-radius: 5px;
   border: 0px;
   box-sizing: border-box;
