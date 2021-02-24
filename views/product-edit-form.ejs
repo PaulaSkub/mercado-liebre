@@ -31,13 +31,13 @@
 					<div class="col-12 col-md-6">
 						<label for="category" class="form-label">Categoría: <%= product.category %></label>
 						<select name="category" id="category" class="form-input" >
-							<option value="<%= product.category %>">Elegí</option>
+							<option >Elegí</option>
 							<option  value="in-sale">En oferta</option>
 							<option value="visited" >Últimos agregados</option>
 						</select>
 					</div>
 					<div class="col-12 col-md-6">
-						<input type="file" name="img" src="/images/products/<%= product.image %>">
+						<input type="file" name="img" >
 					</div>
 						<div class="col-12">
 							<label for="description" class="form-label">Descipción: <%= product.description %></label>

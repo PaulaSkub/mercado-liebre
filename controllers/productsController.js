@@ -107,7 +107,7 @@ const controller = {
 			}
 		})
 	
-console.log (products)
+		console.log (products)
 	      	
 		productsJSON = JSON.stringify(products);
         
