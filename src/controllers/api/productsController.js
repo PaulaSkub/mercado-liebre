@@ -27,24 +27,22 @@ module.exports = {
     },
     offers (req, res){
 
-        Product.findAll({
-			order: [
-				['discount', 'DESC']
-			],
-			limit: 8
-		})
-
-			.then(function(inSale){
-				let respuesta = {
-					meta:{
-						status: 200,
-						count: inSale.length,
-						url: "/api/products/offers"
-						},
-					data: inSale}
-					res.send(respuesta)})
-			 
-			.catch(e => console.log(e));
+        Item.destroy({
+			where: {
+			  id: req.body.itemId,
+			},
+			force: true,
+		  })
+			.then((response) => {
+				if (response > 0) {
+                    res.json({
+                        status: 200
+                    })
+                } else {
+                    console.log('No se borró nada');
+                }
+            })
+			.catch((e) => console.log(e));
 		
     }
     
