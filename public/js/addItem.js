@@ -4,14 +4,18 @@ window.addEventListener('load', function(){
     let quantity = document.getElementById('quantity');
     let productId = formadd.productId.value;
 
-    formAdd.addEventListener('submit', function(x){
+    formAdd.addEventListener('submit', function(){
         let quantityValue = quantity.value
+        console.log(quantityValue)
         if (quantityValue > 0){
             axios.post('http://localhost:3000/api/items',{
                 quantityValue,
                 productId
                  }
-            ).then((item) => res.redirect("/users/cart"))
+            ).then((response) => {
+                
+                if (response.status == '200') {
+                    window.location.assign('http://localhost:3000/users/cart')}})
             .catch((e) => console.log(e));
             }
                 
