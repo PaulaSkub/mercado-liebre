@@ -233,16 +233,16 @@ module.exports = {
   //   }
   // },
 
-  deleteFromCart(req, res) {
-    Item.destroy({
-      where: {
-        id: req.body.itemId,
-      },
-      force: true,
-    })
-      .then((response) => res.redirect("/users/cart"))
-      .catch((e) => console.log(e));
-  },
+  // deleteFromCart(req, res) {
+  //   Item.destroy({
+  //     where: {
+  //       id: req.body.itemId,
+  //     },
+  //     force: true,
+  //   })
+  //     .then((response) => res.redirect("/users/cart"))
+  //     .catch((e) => console.log(e));
+  // },
 
   shop(req, res) {
     let items;

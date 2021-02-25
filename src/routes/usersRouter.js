@@ -72,7 +72,7 @@ router.get('/cart', authMiddleware, usersController.cart);
 // router.post('/addToCart', authMiddleware, validator.addToCart, usersController.addToCart);
 router.get('/history', authMiddleware, usersController.history);
 router.post('/shop', authMiddleware, usersController.shop);
-router.post('/deleteFromCart', authMiddleware, usersController.deleteFromCart);
+// router.post('/deleteFromCart', authMiddleware, usersController.deleteFromCart);
 router.get('/buy-detail/:id', authMiddleware, usersController.showBuyDetail);
 
 
